@@ -59,7 +59,7 @@ int main(int argc, char *argv[])
         case 4: start = insert_at_end(start);
                 break;
 
-        case 5: start (start);
+        case 5: start = insert_before(start);
                 break;
 
         case 6: start = insert_after(start);
@@ -162,7 +162,7 @@ struct node *insert_at_end(struct node *start)
     return start;
 }
 
-struct node(struct node *start)
+struct node *insert_before(struct node *start)
 {
     struct node *new_node, *ptr, *preptr;
     int num, val;
